@@ -8,6 +8,8 @@ function ToolsProvider({ children }) {
     const [searchedValues, setSearchedValues] = useState('');
     const [showModal, setShowModal] = useState(false);
     const [modalData, setModalData] = useState({});
+    const [searchedTools, setSearchedTools] = useState([]);
+    const [lastVisited, setLastVisited] = useState([]);
 
 
     useEffect(() => {
@@ -27,6 +29,10 @@ function ToolsProvider({ children }) {
         setShowModal,
         modalData,
         setModalData,
+        searchedTools,
+        setSearchedTools,
+        lastVisited,
+        setLastVisited
     };
 
     return (

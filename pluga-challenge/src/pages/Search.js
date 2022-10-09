@@ -18,15 +18,15 @@ function Search() {
     const filteredList = dataAPI.filter((tool) => tool.name.toLowerCase().includes(convertedSearch));
 
     return (
-        <main>
-            <section>
+        <main className='sm:px-6 md:px-14 lg:px-36'>
+            <section className="">
                 <Searchbar />
                 { showModal ? ( <DetailsCard /> ) : null }
                 {
                     filteredList.length === 0 ? (
                         <p>Ops, não encontramos nenhuma ferramenta com este nome!</p>
                     )
-                        : <section>
+                        : <section className='flex flex-wrap justify-center'>
                             {
                                 filteredList.map((tool, index) => <ToolCard key={index} tool={tool} />)
                             }
