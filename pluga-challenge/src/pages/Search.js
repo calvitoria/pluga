@@ -24,7 +24,7 @@ function Search() {
                 { showModal ? ( <DetailsCard /> ) : null }
                 {
                     filteredList.length === 0 ? (
-                        <p>Ops, não encontramos nenhuma ferramenta com este nome!</p>
+                        <p className='text-center mt-8 text-slate-600'>Ops, não encontramos nenhuma ferramenta com este nome!</p>
                     )
                         : <section className='flex flex-wrap justify-center'>
                             {

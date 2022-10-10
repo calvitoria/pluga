@@ -9,7 +9,7 @@ function ToolsProvider({ children }) {
     const [showModal, setShowModal] = useState(false);
     const [modalData, setModalData] = useState({});
     const [searchedTools, setSearchedTools] = useState([]);
-    const [lastVisited, setLastVisited] = useState([]);
+    const [pageNumber, setPageNumber] = useState(0);
 
 
     useEffect(() => {
@@ -31,8 +31,8 @@ function ToolsProvider({ children }) {
         setModalData,
         searchedTools,
         setSearchedTools,
-        lastVisited,
-        setLastVisited
+        pageNumber,
+        setPageNumber
     };
 
     return (

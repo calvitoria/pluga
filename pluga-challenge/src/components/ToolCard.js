@@ -20,16 +20,14 @@ function ToolCard({ tool }) {
     }
 
     return (
-            <button
-                className="bg-slate-400 rounded-md w-48 flex-col justify-center items-center m-4 px-8 pt-8 pb-8 min-h-[220px]"
-                type="button"
-                onClick={ buildModal }
-            > 
-                <div className='flex-col justify-center'>
-                    <img className="w-20 mt-4" alt={`imagem da ferramenta ${tool.name}`} src={tool.icon} />
-                    <h1 className="w-20 text-center text-white text-lg pt-2"> {tool.name} </h1>
+        <div onClick={ buildModal } 
+        className="flex justify-center items-center bg-slate-400 rounded-md m-5 
+        w-48 h-48 cursor-pointer hover:drop-shadow-md">
+                <div className=''>
+                    <img className="w-20 pb-2" alt={`imagem da ferramenta ${tool.name}`} src={tool.icon} />
+                    <h1 className="text-white text-center w-20"> {tool.name} </h1>
                 </div>
-            </button>
+        </div>
     );
 }
 
