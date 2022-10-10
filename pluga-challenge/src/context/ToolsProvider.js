@@ -9,7 +9,8 @@ function ToolsProvider({ children }) {
     const [showModal, setShowModal] = useState(false);
     const [modalData, setModalData] = useState({});
     const [searchedTools, setSearchedTools] = useState([]);
-    const [pageNumber, setPageNumber] = useState(0);
+    const [toolsPerPage, setToolsPerPage] = useState(12);
+    const [currentPage, setCurrentPage] = useState(1);
 
 
     useEffect(() => {
@@ -31,8 +32,10 @@ function ToolsProvider({ children }) {
         setModalData,
         searchedTools,
         setSearchedTools,
-        pageNumber,
-        setPageNumber
+        currentPage,
+        setCurrentPage,
+        toolsPerPage,
+        setToolsPerPage
     };
 
     return (

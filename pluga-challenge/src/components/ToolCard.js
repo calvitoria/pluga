@@ -11,16 +11,17 @@ function ToolCard({ tool }) {
         setSearchedTools,
     } } = useContext(toolsContext);
 
-    const buildModal = () => {
+    const handleToolCardClick = () => {
         const visitedT = searchedTools;
         visitedT.push(tool);
         setModalData(tool);
         setShowModal(true);
         setSearchedTools(visitedT);
+        localStorage.setItem('visitedTools', JSON.stringify(visitedT));
     }
 
     return (
-        <div onClick={ buildModal } 
+        <div onClick={ handleToolCardClick } 
         className="flex justify-center items-center bg-slate-400 rounded-md m-5 
         w-48 h-48 cursor-pointer hover:drop-shadow-md">
                 <div className=''>

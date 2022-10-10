@@ -12,7 +12,10 @@ function DetailsCard() {
 
     const uniqueLastVisited = [...new Set(searchedTools)];
     const listOfVisited = uniqueLastVisited.slice(-3);
-        
+    
+
+    // const visitedToolsLocalSt = localStorage.getItem('visitedTools');
+    // const displayTools = JSON.parse(visitedToolsLocalSt);
     
     return (
         <main className="fixed inset-0 z-10 overflow-y-auto">
