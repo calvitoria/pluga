@@ -4,6 +4,7 @@ import Searchbar from '../components/Searchbar';
 import ToolCard from '../components/ToolCard';
 import DetailsCard from '../components/DetailsCard';
 import Pagination from '../components/Pagination';
+import Header from '../components/Header';
 
 function Search() {
 
@@ -27,12 +28,15 @@ function Search() {
 
     return (
         <main className='sm:px-6 md:px-14 lg:px-36'>
+            <Header />
             <section className="">
                 <Searchbar />
                 { showModal ? ( <DetailsCard /> ) : null }
                 {
                     filteredList.length === 0 ? (
-                        <p className='text-center mt-8 text-slate-600'>Ops, não encontramos nenhuma ferramenta com este nome!</p>
+                        <p className='text-center mt-8 text-slate-600'>
+                            Ops! Sua busca por { <span className='font-bold'> {searchedValues}  </span> } não encontrou nenhum resultado :(
+                        </p>
                     )
                         : <>
                         <section className='flex flex-wrap justify-center'>

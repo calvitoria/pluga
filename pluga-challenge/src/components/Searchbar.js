@@ -10,7 +10,7 @@ function Searchbar() {
     }
 
     return (
-        <section className='pt-14'>
+        <section className='pt-8 px-10'>
             <div className='mx-4'>
                 <input
                     className='border-2 border-slate-400 focus:ring-sky-500 py-2 w-full text-pluga focus:outline-none 

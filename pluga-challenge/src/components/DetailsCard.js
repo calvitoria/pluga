@@ -10,15 +10,17 @@ function DetailsCard() {
         searchedTools,
     } } = useContext(toolsContext);
 
-    const uniqueLastVisited = [...new Set(searchedTools)];
+    const visitedToolsLocalSt = localStorage.getItem('visitedTools');
+    const displayTools = JSON.parse(visitedToolsLocalSt);
+
+    const uniqueLastVisitedTools = [...new Set(searchedTools)];
     const listOfVisited = uniqueLastVisited.slice(-3);
     
 
-    // const visitedToolsLocalSt = localStorage.getItem('visitedTools');
-    // const displayTools = JSON.parse(visitedToolsLocalSt);
+    
     
     return (
-        <main className="fixed inset-0 z-10 overflow-y-auto">
+        <main className="fixed inset-0 z-10 overflow-y-auto uppercase">
             <div
                 className="fixed inset-0 w-full h-full bg-black opacity-40"
                 onClick={() => setShowModal(false)}
