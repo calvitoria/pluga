@@ -1,12 +1,7 @@
 import React from 'react';
 
-function Pagination({ toolsPerPage, totalTools, paginate }) {
-    const pageNumbers = [];
-
-    for (let i = 1; i <= Math.ceil(totalTools / toolsPerPage); i += 1) {
-        pageNumbers.push(i);
-    }
-
+function Pagination() {
+    
     return (
         <header>
             <nav className='flex justify-between items-center w-full pt-4 px-16'>
@@ -21,7 +16,7 @@ function Pagination({ toolsPerPage, totalTools, paginate }) {
                     target='blank'
                     href='https://github.com/calvitoria/pluga'
                     className='font-semibold text-pluga/80 rounded-full hover:bg-pluga/60 hover:text-white px-4 py-1'>
-                    GitHub
+                    {'>'}_CODE
                 </a>
             </nav>
         </header>

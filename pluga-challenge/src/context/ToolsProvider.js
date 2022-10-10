@@ -8,7 +8,6 @@ function ToolsProvider({ children }) {
     const [searchedValues, setSearchedValues] = useState('');
     const [showModal, setShowModal] = useState(false);
     const [modalData, setModalData] = useState({});
-    const [searchedTools, setSearchedTools] = useState([]);
     const [toolsPerPage, setToolsPerPage] = useState(12);
     const [currentPage, setCurrentPage] = useState(1);
 
@@ -22,24 +21,25 @@ function ToolsProvider({ children }) {
         getAPIdata();
       }, []);
 
-    const context = { 
+    const states = { 
         dataAPI,
-        setSearchedValues,
         searchedValues,
         showModal,
-        setShowModal,
         modalData,
-        setModalData,
-        searchedTools,
-        setSearchedTools,
         currentPage,
-        setCurrentPage,
         toolsPerPage,
+    };
+
+    const functions = { 
+        setSearchedValues,
+        setShowModal,
+        setModalData,
+        setCurrentPage,
         setToolsPerPage
     };
 
     return (
-        <toolsContext.Provider value={{context}}>
+        <toolsContext.Provider value={{states, functions}}>
             { children }
         </toolsContext.Provider>
     )

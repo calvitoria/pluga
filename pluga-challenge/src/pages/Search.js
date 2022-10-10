@@ -8,14 +8,16 @@ import Header from '../components/Header';
 
 function Search() {
 
-    const { context: {
-        dataAPI,
-        searchedValues,
-        showModal,
-        currentPage,
-        setCurrentPage,
-        toolsPerPage,
-    } } = useContext(toolsContext);
+    const {
+        states: {
+            dataAPI,
+            searchedValues,
+            showModal,
+            currentPage,
+            toolsPerPage },
+
+        functions: { setCurrentPage } 
+    } = useContext(toolsContext);
 
     const convertedSearch = searchedValues.toLowerCase();
     const filteredList = dataAPI.filter((tool) => tool.name.toLowerCase().includes(convertedSearch));
@@ -31,19 +33,19 @@ function Search() {
             <Header />
             <section className="">
                 <Searchbar />
-                { showModal ? ( <DetailsCard /> ) : null }
+                {showModal ? (<DetailsCard />) : null}
                 {
                     filteredList.length === 0 ? (
                         <p className='text-center mt-8 text-slate-600'>
-                            Ops! Sua busca por { <span className='font-bold'> {searchedValues}  </span> } não encontrou nenhum resultado :(
+                            Ops! Sua busca por {<span className='font-bold'> {searchedValues}  </span>} não encontrou nenhum resultado :(
                         </p>
                     )
                         : <>
-                        <section className='flex flex-wrap justify-center'>
-                            {currentTools.map((tool, index) => <ToolCard key={index} tool={tool} />)}
-                        </section>
+                            <section className='flex flex-wrap justify-center'>
+                                {currentTools.map((tool, index) => <ToolCard key={index} tool={tool} />)}
+                            </section>
 
-                        <Pagination toolsPerPage={toolsPerPage} totalTools={filteredList.length} paginate={paginate} />
+                            <Pagination toolsPerPage={toolsPerPage} totalTools={filteredList.length} paginate={paginate} />
                         </>
                 }
             </section>
