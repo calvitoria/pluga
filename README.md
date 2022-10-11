@@ -28,7 +28,6 @@ Proporciona ao usuário visualizar e pesquisar diversas ferramentas integradas p
 <img alt="tela de busca pluga tools" src="https://user-images.githubusercontent.com/95686401/195161232-b070541b-df88-4b0c-a10c-fdd1197105a5.gif" />
 
 ## Como Utilizar o projeto
-Você pode acessar o projeto deployado aqui, ou seguir o passo a passo abaixo: 
 
 1. clone o projeto
 
