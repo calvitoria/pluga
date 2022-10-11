@@ -3,7 +3,7 @@ import React from 'react';
 function Pagination() {
     
     return (
-        <header>
+        <header className='sm:px-10 pt-4 md:px-24 lg:px-48 xl:mx-36'>
             <nav className='flex justify-between items-center w-full pt-4 px-16'>
                 <a target='blank' href='https://pluga.co/'>
                     <img

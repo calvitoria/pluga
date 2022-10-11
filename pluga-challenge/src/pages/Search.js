@@ -16,7 +16,7 @@ function Search() {
             currentPage,
             toolsPerPage },
 
-        functions: { setCurrentPage } 
+        functions: { setCurrentPage }
     } = useContext(toolsContext);
 
     const convertedSearch = searchedValues.toLowerCase();
@@ -29,10 +29,10 @@ function Search() {
     const paginate = (pageNumber) => setCurrentPage(pageNumber)
 
     return (
-        <main className='sm:px-6 md:px-14 lg:px-36'>
+        <main className=''>
             <Header />
-            <section className="">
-                <Searchbar />
+            <Searchbar />
+            <section className="grid justify-items-center">
                 {showModal ? (<DetailsCard />) : null}
                 {
                     filteredList.length === 0 ? (
@@ -41,7 +41,7 @@ function Search() {
                         </p>
                     )
                         : <>
-                            <section className='flex flex-wrap justify-center'>
+                            <section className='sm:grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 w-fit content-center my-8'>
                                 {currentTools.map((tool, index) => <ToolCard key={index} tool={tool} />)}
                             </section>
 
