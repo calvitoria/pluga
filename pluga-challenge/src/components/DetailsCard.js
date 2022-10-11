@@ -25,7 +25,7 @@ function DetailsCard() {
             <section className="flex items-center min-h-screen px-4 py-8">
 
                 {/* div abaixo: card detalhado */}
-                <div className="bg-gray-300 relative min-w-[800px] max-w-lg p-4 mx-auto bg-slate-300 rounded-md shadow-lg px-12">
+                <div className="bg-gray-300 relative min-w-[800px] max-w-lg p-4 mx-auto bg-slate-200 rounded-md shadow-lg px-12">
 
                     {/* container "conteúdo" */}
                     <div className="my-12 sm:flex-col md:flex-col justify-around flex-col">

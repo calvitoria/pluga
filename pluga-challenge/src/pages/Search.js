@@ -29,7 +29,7 @@ function Search() {
     const paginate = (pageNumber) => setCurrentPage(pageNumber)
 
     return (
-        <main className=''>
+        <main className='sm:px-12 md:px-24 lg:px-36 xl:px-96'>
             <Header />
             <Searchbar />
             <section className="grid justify-items-center">

@@ -14,9 +14,9 @@ module.exports = {
 
       'md': '600px',
 
-      'lg': '1440px',
+      'lg': '1084px',
 
-      'xl': '1800px',
+      'xl': '1680px',
     },
   },
   plugins: [],
