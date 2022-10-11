@@ -26,3 +26,36 @@ Proporciona ao usuário visualizar e pesquisar diversas ferramentas integradas p
 
 > Responsive
 <img alt="tela de busca pluga tools" src="https://user-images.githubusercontent.com/95686401/195161232-b070541b-df88-4b0c-a10c-fdd1197105a5.gif" />
+
+## Como Utilizar o projeto
+Você pode acessar o projeto deployado aqui, ou seguir o passo a passo abaixo: 
+
+1. clone o projeto
+
+```
+git clone git@github.com:calvitoria/pluga-challenge.git
+```
+
+2. Acesse o diretório clonado e a pasta de mesmo nome
+
+```
+cd pluga-challenge && cd pluga-challenge
+```
+
+4. Execute a aplicação react
+
+```
+npm start
+```
+Para executar todos os testes:
+
+```
+npm test a
+```
+
+## Referências utilizadas: 
+- Criação de [modais com react.js e tailwind.css](https://larainfo.com/blogs/react-tailwind-css-dialog-modal-example)
+- [Paginação utilizando React Hooks](https://www.youtube.com/watch?v=IYCa1F-OWmk&list=RDLVHANSMtDy508&start_radio=1)
+- Documentações oficiais das demais tecnologias utilizadas e projetos autorais já realizados
+
+## Obrigada pluga pela oportunidade e pela seriedade, transparência e empatia durante o processo seletivo!
