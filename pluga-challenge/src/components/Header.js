@@ -1,7 +1,7 @@
 import React from 'react';
 
 function Pagination() {
-    
+
     return (
         <header>
             <nav className='flex justify-between items-center w-full py-6'>

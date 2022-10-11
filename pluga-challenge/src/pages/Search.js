@@ -34,7 +34,7 @@ function Search() {
             <Searchbar />
             <section className="grid justify-items-center">
                 {showModal ? (<DetailsCard />) : null}
-                
+
                 {
                     filteredList.length === 0 ? (
                         <div className='text-center'>
