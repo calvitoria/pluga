@@ -37,8 +37,7 @@ function ToolCard({ tool }) {
     }
 
     return (
-        <div onClick={handleToolCardClick}
-            data-testid='toolCard'
+        <div onClick={handleToolCardClick}            
             className="sm:w-60 sm:h-60  md:w-60 md:h-60 lg:w-60 lg:h-60 xl:w-72 xl:h-72  flex justify-center items-center bg-slate-400 rounded-md m-5 
             uppercase cursor-pointer hover:drop-shadow-md border-2 border-slate-400 hover:border-slate-500">
 

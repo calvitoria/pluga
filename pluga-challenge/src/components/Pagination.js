@@ -17,7 +17,7 @@ function Pagination({ toolsPerPage, totalTools, paginate }) {
                         className='hover:bg-slate-200 text-slate-600 font-semibold px-4 py-2 my-4 hover:text-pluga 
                         cursor-pointer active:bg-pluga/50 active:text-white hover:underline focus:underline'>
 
-                        <a href='#!' className='active:bg-pluga/50'>
+                        <a href='#!' className='active:bg-pluga/50' data-testid='paginationItem'>
                             {pageNumber}
                         </a>
 

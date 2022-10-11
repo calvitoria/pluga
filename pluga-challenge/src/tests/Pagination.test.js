@@ -3,41 +3,35 @@ import userEvent from '@testing-library/user-event';
 
 import App from '../App';
 
-describe('Testa se é possível pesquisar ferramentas da pluga', () => {
+describe('Testa Paginação na page Search', () => {
 
-    test('Verifica se existe uma barra de pesquisa', () => {
+    test('Verifica se existem 6 páginas de ferramentas', async () => {
         render(<App />);
 
-        const searchbar = screen.getByRole('textbox', {  name: /search/i});
+        const pageNums = await screen.findAllByTestId('paginationItem');
 
-        expect(searchbar).toBeInTheDocument();
+        expect(pageNums.length).toBe(6);
     });
 
-    test('Verifica se é possível buscar ferramentas pela barra de pesquisa', async () => {
+    test('Verifica se a paginação funciona com o filtro de busca "a"', async () => {
         render(<App />);
 
         const searchbar = screen.getByRole('textbox', {  name: /search/i});
-        userEvent.type(searchbar, 'om');
+        userEvent.type(searchbar, 'a');
 
-        const result1 = await screen.findByText(/OMIE/i);
-        const result2 = await screen.findByText(/WOOCOMMERCE/i);
-        const result3 = await screen.findByText(/INTERCOM/i);
+        const firstSearch = await screen.findAllByTestId('paginationItem');
 
-        expect(searchbar.value).toBe('om');
-        expect(result1).toBeInTheDocument();
-        expect(result2).toBeInTheDocument();
-        expect(result3).toBeInTheDocument();
+        expect(firstSearch.length).toBe(3);
     });
 
-    test('Verifica se ao pesquisar ferramenta inexistente retorna a mensagem correta', async () => {
+    test('Verifica se a paginação funciona com o filtro de busca "aa"', async () => {
         render(<App />);
 
         const searchbar = screen.getByRole('textbox', {  name: /search/i});
-        userEvent.type(searchbar, 'twitter');
+        userEvent.type(searchbar, 'aa');
 
-        const toolNotFound = await screen.findByText(/Voltar para página inicial/i);
+        const secondSearch = await screen.findAllByTestId('paginationItem');
 
-        expect(searchbar.value).toBe('twitter');
-        expect(toolNotFound).toBeInTheDocument();
+        expect(secondSearch.length).toBe(1);
     });
 });
