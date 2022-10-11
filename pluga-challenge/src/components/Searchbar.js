@@ -13,8 +13,8 @@ function Searchbar() {
 
     return (
         <div>
-            <label for='searchField' class='relative block' >
-                <span class="text-2xl text-slate-400 pt-1 material-symbols-outlined absolute inset-y-0 left-0 flex items-center pl-4">
+            <label htmlFor='searchField' className='relative block' >
+                <span className="text-2xl text-slate-400 pt-1 material-symbols-outlined absolute inset-y-0 left-0 flex items-center pl-4">
                     search
                 </span>
                 <input

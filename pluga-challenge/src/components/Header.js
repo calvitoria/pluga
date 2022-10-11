@@ -5,7 +5,7 @@ function Pagination() {
     return (
         <header>
             <nav className='flex justify-between items-center w-full py-6'>
-                <a target='blank' href='https://pluga.co/'>
+                <a data-testid='logoPluga' target='blank' href='https://pluga.co/'>
                     <img
                         alt='logo da pluga'
                         className='w-20'
