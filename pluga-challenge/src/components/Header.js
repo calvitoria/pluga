@@ -14,7 +14,7 @@ function Pagination() {
                 </a>
                 <a
                     target='blank'
-                    href='https://github.com/calvitoria/pluga'
+                    href='https://github.com/calvitoria/pluga-challenge'
                     className='font-semibold text-pluga/80 rounded-full hover:bg-pluga/60 hover:text-white px-4 py-1'>
                     {'>'}_CODE
                 </a>
