@@ -1,4 +1,4 @@
-# Bem vind@ ao repositório dedicado ao desafio para Pessoa Dev. Jr na Pluga!
+# Bem vind@ ao repositório do desafio para Pessoa Dev. Jr na Pluga!
 
 ## Sobre a aplicação:
 Proporciona ao usuário visualizar e pesquisar diversas ferramentas integradas pela Pluga. A visualização destas ferramentas é feita por meio de cards que contém seu nome e imagem. Ao clicar na ferramenta desejada, o usuário consegue acessar mais detalhes sobre a mesma. Ainda, neste "Card detalhado" o usuário tem acesso às últimas ferramentas visualizadas na mesma ou em sesões anteriores.
