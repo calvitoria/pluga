@@ -2,12 +2,14 @@ import toolsContext from '../context/toolsContext';
 import React, { useContext } from 'react';
 
 function Searchbar() {
-    const { functions: { setSearchedValues } } = useContext(toolsContext);
+    const { functions: { setSearchedValues, setCurrentPage} } = useContext(toolsContext);
 
 
     const setsSearchedValues = ({ target: { value } }) => { // pega o que for digitado e manda para o context.
+        setCurrentPage(1);
         setSearchedValues(value);
     }
+    
 
     return (
         <div>

@@ -26,7 +26,7 @@ function Search() {
     const indexOfFistTool = indexOfLastTool - toolsPerPage;
     const currentTools = filteredList.slice(indexOfFistTool, indexOfLastTool); // para achar o current, basta achar o intervalo entre o ultimo e o primeiro
 
-    const paginate = (pageNumber) => setCurrentPage(pageNumber)
+    const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
     return (
         <main className='sm:px-12 md:px-24 lg:px-36 xl:px-96'>
@@ -34,11 +34,21 @@ function Search() {
             <Searchbar />
             <section className="grid justify-items-center">
                 {showModal ? (<DetailsCard />) : null}
+                
                 {
                     filteredList.length === 0 ? (
-                        <p className='text-center mt-8 text-slate-600'>
-                            Ops! Sua busca por {<span className='font-bold'> {searchedValues}  </span>} não encontrou nenhum resultado :(
-                        </p>
+                        <div className='text-center'>
+                            <p className='text-center mt-8 text-slate-600'>
+                                Ops! Sua busca por {<span className='font-bold'> {searchedValues}  </span>} não encontrou nenhum resultado :(
+                            </p>
+
+                            <a
+                                href='/'
+                                className='cursor-pointer hover:text-pluga underline text-center text-normal mt-8 text-slate-600'>
+                                Voltar para página inicial
+                            </a>
+
+                        </div>
                     )
                         : <>
                             <section className='sm:grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 w-fit content-center my-8'>
