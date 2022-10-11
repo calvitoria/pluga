@@ -12,4 +12,17 @@ Proporciona ao usuário visualizar e pesquisar diversas ferramentas integradas p
 
 ## Proposta da Pluga
 
+> Página inicial com barra de busca, listagem das ferramentas e paginação;
 <img alt="listagem ferramentas" src="https://user-images.githubusercontent.com/95686401/195158688-4b915845-4029-4263-b389-6015ee5f187f.png" />
+
+> Modal de detalhe da ferramenta e últimas ferramentas visualizadas;
+<img alt="modal popup com detalhe da ferramenta e últimas visualizações" src="https://user-images.githubusercontent.com/95686401/195159469-e20168d6-7158-4e85-937f-2d5e85009936.png" />
+
+
+## Resultado:
+
+> Visualização em desktop
+<img alt="tela de busca pluga tools" src="https://user-images.githubusercontent.com/95686401/195161138-b855c42f-4166-4827-9f8a-7397cbe3248b.gif" />
+
+> Responsive
+<img alt="tela de busca pluga tools" src="https://user-images.githubusercontent.com/95686401/195161232-b070541b-df88-4b0c-a10c-fdd1197105a5.gif" />
