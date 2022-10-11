@@ -57,4 +57,4 @@ npm test a
 - [Paginação utilizando React Hooks](https://www.youtube.com/watch?v=IYCa1F-OWmk&list=RDLVHANSMtDy508&start_radio=1)
 - Documentações oficiais das demais tecnologias utilizadas e projetos autorais já realizados
 
-## Obrigada pluga pela oportunidade e pela seriedade, transparência e empatia durante o processo seletivo!
+### Obrigada pluga pela oportunidade e pela seriedade, transparência e empatia durante o processo seletivo!
